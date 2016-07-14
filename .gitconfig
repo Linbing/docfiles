@@ -6,7 +6,17 @@
 [alias]
     lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [alias]
-    ver = log
+    co = checkout 
+    br = branch
+    st = status
+    unstatus = reset HEAD
+    last = log -1 HEAD
+[alias]
+    logs = log --stat
+    #graph = log --graph
+[alias]
+    format = log --pretty=format:'%h - %an, %ar : %s'
+    #oneline = log --pretty=oneline
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
