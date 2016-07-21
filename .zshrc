@@ -82,4 +82,5 @@ source $ZSH/oh-my-zsh.sh
 
 
 alias rm="rm -rf"
+alias ip="ifconfig en0 | grep inet"
 export ANSIBLE_HOSTS=/usr/local/etc/ansible/hosts
