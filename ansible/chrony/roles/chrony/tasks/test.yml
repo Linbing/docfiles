@@ -1,0 +1,3 @@
+---
+  - name: install chrony
+    yum: name=chrony state=installed

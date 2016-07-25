@@ -1,0 +1,4 @@
+---
+  - include: preconfig.yml
+  - include: test.yml
+  - include: start.yml
