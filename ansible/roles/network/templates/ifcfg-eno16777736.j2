@@ -1,0 +1,8 @@
+DEVICE=eno16777736
+TYPE=Ethernet
+ONBOOT=yes
+BOOTPROTO=static
+HWADDR={{ hostvars[inventory_hostname]['ansible_'+manager_interface]['macaddress'] }}
+NM_CONTROLLED="no"
+IPADDR={{ ipaddr }}
+NETMASK=255.255.255.0

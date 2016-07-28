@@ -1,0 +1,14 @@
+[server]
+root@server
+root@local_controller
+
+[yum]
+root@yum
+
+[controller]
+root@local_controller
+
+[chrony:children]
+server
+
+

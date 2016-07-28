@@ -1,0 +1,4 @@
+---
+  - name: set static network
+    template: src=ifcfg-{{ manager_interface }}.j2 dest=/etc/sysconfig/network-scripts/ifcfg-{{ manager_interface }}
+
