@@ -291,6 +291,32 @@
 * chronyc sourcestats -v
 
 
+---------
+#docker
+* docker import ***.tar image_name
+
+* docker run -d -p local_port:container_port -v local_volume_path:container_volume_paht image_name
+* docker run --privileged -d -p l_prot:c_port -v l_dir:/c_dir image 
+
+* docker attach container_id
+
+* docker rmi image_name
+* docker rm container_id
+* docker build -t image_name .
+* docker commint container_id image_name
+* docker inspect container_id	(show detail of a container
+
+
+
+
+#Dockerfile
+* FROM centos:7.1.1503
+* MAINTAINER user_naem <user_email>
+* RUN yum install -y soft_name
+* COPY local_path container_path
+* WORKDIR default dir
+
+
 
 
 
